@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1725455325 source:c:\users\lenovo\desktop\youcodeprojects\librairie\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"structure.h"
+	"function.h"
+
+1725454219 c:\users\lenovo\desktop\youcodeprojects\librairie\structure.h
+
+1725455299 c:\users\lenovo\desktop\youcodeprojects\librairie\function.h
+	"structure.h"
+
