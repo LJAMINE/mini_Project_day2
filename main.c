@@ -18,6 +18,7 @@ int choix;
      printf("\t 03 :rechercheParTitre . \n");
     printf("\t 04 : mettreAJourQuantite. \n");
     printf("\t 05 : supprimerLivre. \n");
+        printf("\t 06 : afficherTotalLivre. \n");
     printf("\n");
 
         scanf("%d",&choix);
@@ -41,16 +42,19 @@ int choix;
     case 5 :
         supprimerLivre();
         break;
+        case 6 :
+        afficherTotalLivre();
+        break;
 
 
         default:
-                printf("Choix invalide, veuillez réessayer.\n");
+                printf("    invalide, pleaseressayer.\n");
                 break;
 
 
     }
 
-}while(choix > 0 && choix <= 5 );
+}while(choix > 0 && choix <= 6 );
 
 
 

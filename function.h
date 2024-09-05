@@ -60,7 +60,7 @@ void rechercheParTitre() {
     for (int i = 0; i < nombreDeLivres; i++) {
         if (strcmp(livres[i].titre, titreRecherche) == 0) {
             printf("Livre trouvee :\n");
-            printf("\tAuteur : %s\n", livres[i].auteur);
+            printf("\t Auteur : %s\n", livres[i].auteur);
             printf("\tTitre : %s\n", livres[i].titre);
             printf("\tQuantit : %d\n", livres[i].quantity);
             printf("\tPrix : %.2f\n", livres[i].prix);
@@ -70,7 +70,7 @@ void rechercheParTitre() {
     }
 
     if (!livreTrouve) {
-        printf("Livre non trouvé.\n");
+        printf("Livre non trouv.\n");
     }
 }
 
@@ -79,7 +79,7 @@ void mettreAJourQuantite() {
     int nouvelleQuantite;
     int livreTrouve = 0;
 
-    printf("Entrez le titre livre poir mettre    jour la quantitee :\n");
+    printf("Entrer le titre livre poir mettre    jour la quantitee :\n");
     scanf(" %[^\n]", titreRecherche);
 
     for (int i = 0; i < nombreDeLivres; i++) {
@@ -101,36 +101,46 @@ void mettreAJourQuantite() {
     }
 
     if (!livreTrouve) {
-        printf("Livre non trouvé.\n");
+        printf("Livre no trouv.\n");
     }
 }
+
+//supprimer
 
 void supprimerLivre() {
     char titreRecherche[50];
     int livreTrouve = 0;
 
-    printf("Entrez le titre du livre à supprimer :\n");
+    printf("Entrez le titre du livre pour supprimer :\n");
     scanf(" %[^\n]", titreRecherche);
 
     for (int i = 0; i < nombreDeLivres; i++) {
         if (strcmp(livres[i].titre, titreRecherche) == 0) {
             livreTrouve = 1;
 
-            // Shift all subsequent books one position up
             for (int j = i; j < nombreDeLivres - 1; j++) {
                 livres[j] = livres[j + 1];
             }
 
-            // Decrease the count of the total number of books
             nombreDeLivres--;
 
-            printf("Livre supprimé avec succès !\n");
+            printf("Livre est  supprime   !\n");
             break;
         }
     }
 
     if (!livreTrouve) {
-        printf("Livre non trouvé.\n");
+        printf(" livree not found .\n");
     }
+}
+
+void afficherTotalLivre() {
+    int totalQuantite = 0;
+
+    for (int i = 0; i < nombreDeLivres; i++) {
+        totalQuantite += livres[i].quantity;
+    }
+
+    printf("Le nombre total de livr  en stock est : %d\n", totalQuantite);
 }
 #endif

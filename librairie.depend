@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1725455325 source:c:\users\lenovo\desktop\youcodeprojects\librairie\main.c
+1725463809 source:c:\users\lenovo\desktop\youcodeprojects\librairie\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -8,6 +8,6 @@
 
 1725454219 c:\users\lenovo\desktop\youcodeprojects\librairie\structure.h
 
-1725455299 c:\users\lenovo\desktop\youcodeprojects\librairie\function.h
+1725521405 c:\users\lenovo\desktop\youcodeprojects\librairie\function.h
 	"structure.h"
 
